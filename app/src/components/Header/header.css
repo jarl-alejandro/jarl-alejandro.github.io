@@ -1,9 +1,14 @@
 .Header {
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  z-index: 1111;
   width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  aling-items: center;
+  align-items: center;
+  background-color: green;
 }
 
 .Header-list {
@@ -14,5 +19,12 @@
 
 .Header-list li {
   padding: 1rem;
-  cursor: pointer
+  cursor: pointer;
+  border-top: 6px solid transparent;
+  transition: border-top .3s linear;
+  color: white;
+}
+
+.Header-list li:hover {
+  border-top: 6px solid;
 }

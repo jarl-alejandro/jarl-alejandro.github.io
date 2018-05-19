@@ -4,7 +4,6 @@ import './header.css'
 function Header (props) {
   return (
     <header className='Header'>
-      <h1 className='Header-logo'>JARL</h1>
       <nav className='Header-menu'>
         <ul className='Header-list'>
           <li>Inicio</li>
