@@ -1,0 +1,26 @@
+.About {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  background-color: #000;
+  font-size: 2rem;
+}
+
+.About-me, .About-know {
+  height: 100%;
+}
+
+.About-me {
+  background-color: red;
+}
+
+.About-know {
+  background-color: #000;
+  transform: skew(-8deg);
+  transform-origin: 0 0;
+}
+.About-normal {
+  transform: skew(8deg);
+  width: 85%;
+  margin: 0 auto;
+}
