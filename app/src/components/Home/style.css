@@ -1,7 +1,7 @@
 .Home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #000000;
+  background-color: #9eff41;
 }
 .Home-presetation {
   position: relative;
@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
+  background-color: #9eff41;
 }
 .Home-title {
   position: absolute;
@@ -21,6 +21,6 @@
 
 .Home-logo {
   height: 100%;
-  background: red;
+  background: #27bc88;
   clip-path: polygon(24% 0, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 }

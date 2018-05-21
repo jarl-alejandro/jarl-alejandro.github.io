@@ -1,14 +1,14 @@
 .Header {
   position: fixed;
   bottom: 0;
-  left: 10%;
+  left: 0;
   z-index: 1111;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: green;
+  background-color: #27bc88;
 }
 
 .Header-list {
@@ -23,8 +23,9 @@
   border-top: 6px solid transparent;
   transition: border-top .3s linear;
   color: white;
+  font-weight: bold;
 }
 
 .Header-list li:hover {
-  border-top: 6px solid;
+  border-top: 6px solid #9eff41;
 }
