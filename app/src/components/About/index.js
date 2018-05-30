@@ -9,10 +9,9 @@ function About (props) {
         <div className='About-container'>
           <h2 className='About-title'>Soy desarrollador web de Ecuador</h2>
           <p className='About-text'>
-            Hola me llamo Alejandro Rivas tengo 21 años de edad, me gusta programar,
-            practicar cualquier tipo de deporte, soy autodicata aprender nuevas cosas
-            cada día, aparte de la programacion tengo una gran atraccion hacia el estudio
-            del universo
+            Hola, soy Alejandro Rivas, soy un desarrollador de aplicaciones web y mobile,
+            actualmente desarollo full-stack javascript tanto en el back-end como en el front-end
+            y en la parte mobil con react native y web usando react.
           </p>
         </div>
       </article>

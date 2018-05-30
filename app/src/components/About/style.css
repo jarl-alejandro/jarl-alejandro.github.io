@@ -1,11 +1,10 @@
 .About {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  min-height: 70vh;
-  color: white;
-  background-color: #9eff41;
+  min-height: 65vh !important;
+  color: #fcfcfc;
+  background-color: #fcfcfc;
 }
-
 .About-me, .About-know {
   height: 100%;
 }
@@ -15,17 +14,31 @@
 }
 
 .About-me {
-  background-color: #27bc88;
+  background-color: #292929;
 }
 
 .About-title {
   margin-top: 3rem;
   margin-bottom: 1rem;
-  text-align: center;
   font-size: 2rem;
+  font-weight: 500;
+}
+
+.About-title::after {
+  content: '';
+  position: absolute;
+  border-bottom: 5px solid;
+  display: block;
+  width: 100px;
+  transition: all linear .3s;
+}
+.About-container:hover > .About-title::after { width: 38%; }
+.About-normal:hover > .About-title::after {
+  width: 39%;
 }
 
 .About-text {
-  font-size: 17px;
+  font-size: 22px;
   margin-top: 3rem;
+  line-height: 41px;
 }

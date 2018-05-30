@@ -1,7 +1,8 @@
 .About-know {
-  background-color: #9eff41;
   transform: skew(-8deg);
   transform-origin: 0 0;
+  background-color: #fcfcfc;
+  color: #4c4c4c;
 }
 
 .About-normal {
@@ -17,4 +18,5 @@
 
 .About-item {
   font-size: 18px;
+  margin-top: 5px;
 }

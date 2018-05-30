@@ -1,7 +1,7 @@
 .Home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #9eff41;
+  background-color: #fcfcfC;
 }
 .Home-presetation {
   position: relative;
@@ -9,18 +9,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #9eff41;
+  background-color: #fcfcfC;
 }
 .Home-title {
   position: absolute;
   left: 25px;
   width: 100%;
-  color: white;
+  color: #4c4c4c;
   font-size: 4rem;
 }
 
 .Home-logo {
   height: 100%;
-  background: #27bc88;
+  background-image: url(https://scontent.fgye2-1.fna.fbcdn.net/v/t1.0-9/31948867_817138405143277_8235270761225388032_n.jpg?_nc_cat=0&oh=906a700e8b12195d7fd6fc065af46fbb&oe=5B7CF00E);
+  background-size: cover;
   clip-path: polygon(24% 0, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 }
