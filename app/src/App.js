@@ -1,22 +1,20 @@
-import React, { Component, Fragment } from 'react'
+import React, {
+  Component,
+  Fragment
+} from 'react'
+import MenuAside from './components/MenuAside'
 
-import Header from './components/Header'
-import Home from './components/Home'
-import About from './components/About'
-import Projects from './components/Projects'
-import Contacts from './components/Contacts'
 import './App.css'
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
-        <Header />
-        <Home />
-        <About />
-        <Projects />
-        <Contacts />
-      </Fragment>
+      <section className='JarlApp'>
+        <MenuAside />
+        <main className='MainContainer'>
+          Main
+        </main>
+      </section>
     )
   }
 }
