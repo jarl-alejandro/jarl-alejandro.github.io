@@ -1,13 +1,7 @@
 import React from 'react'
-import {
-  Card,
-  CardActions,
-  CardContent,
-  Button,
-  Typography,
-} from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 
-const Item = ({ item, classes }) => (
+const Item = ({ item }) => (
   <article className='TechnologyJarl-item'>
     <div className='TechnologyJarl-item-container'>
       <img src={ item.image } alt={ item.name } className='TechnologyJarl-media' />

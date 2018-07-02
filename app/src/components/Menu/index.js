@@ -19,28 +19,28 @@ const MenuAside = props => (
       <ListItemText primary="jarl-alejandro" />
     </ListItem>
 
-    <ListItem button>
+    <ListItem button component='a' href='#home'>
       <ListItemIcon>
         <HomeIcon />
       </ListItemIcon>
       <ListItemText primary="Inicio" />
     </ListItem>
 
-    <ListItem button>
+    <ListItem button component='a' href='#technology'>
       <ListItemIcon>
         <DnsIcon />
       </ListItemIcon>
       <ListItemText primary="Tecnologias" />
     </ListItem>
 
-    <ListItem button>
+    <ListItem button component='a' href='#project'>
       <ListItemIcon>
         <ExploreIcon />
       </ListItemIcon>
       <ListItemText primary="Proyectos" />
     </ListItem>
 
-    <ListItem button>
+    <ListItem button component='a' href='#contact'>
       <ListItemIcon>
         <MessageIcon />
       </ListItemIcon>

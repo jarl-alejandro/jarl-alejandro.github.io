@@ -7,7 +7,7 @@ import data from './data'
 import './style.css'
 
 const Technology = props => (
-  <section className='TechnologyJarl'>
+  <section className='TechnologyJarl' id='technology'>
     <Typography
       variant='title'
       component='h2'
