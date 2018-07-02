@@ -1,6 +1,18 @@
 {
-  "main.css": "static/css/main.812bc02c.css",
-  "main.css.map": "static/css/main.812bc02c.css.map",
-  "main.js": "static/js/main.302e6741.js",
-  "main.js.map": "static/js/main.302e6741.js.map"
+  "main.css": "static/css/main.012df360.css",
+  "main.css.map": "static/css/main.012df360.css.map",
+  "main.js": "static/js/main.7551be93.js",
+  "main.js.map": "static/js/main.7551be93.js.map",
+  "static/media/GitLab_Logo.svg.png": "static/media/GitLab_Logo.svg.d8dd9f3a.png",
+  "static/media/babel-logo.png": "static/media/babel-logo.e7c474b7.png",
+  "static/media/css3-logo.png": "static/media/css3-logo.bc2328de.png",
+  "static/media/git-logo.jpg": "static/media/git-logo.5c560e13.jpg",
+  "static/media/javascript-logo.png": "static/media/javascript-logo.85458a67.png",
+  "static/media/mongo-logo.png": "static/media/mongo-logo.4f46be41.png",
+  "static/media/node-logo.png": "static/media/node-logo.f8dab57d.png",
+  "static/media/postgresql-logo.png": "static/media/postgresql-logo.a23eef34.png",
+  "static/media/react-logo.png": "static/media/react-logo.e8cb29b4.png",
+  "static/media/sass-logo.png": "static/media/sass-logo.084f0cf8.png",
+  "static/media/sql-logo.png": "static/media/sql-logo.138ac8ea.png",
+  "static/media/webpack-logo.png": "static/media/webpack-logo.97426264.png"
 }
