@@ -2,3 +2,8 @@
   display: grid;
   grid-template-columns: 15% 85%;
 }
+
+.MainContainer {
+  overflow: auto;
+  height: 100vh;
+}

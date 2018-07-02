@@ -7,14 +7,14 @@ import {
 } from '@material-ui/core'
 
 import HomeIcon from '@material-ui/icons/Home'
-import AccountCircleIcon from '@material-ui/icons/AccountCircle'
-
 import MessageIcon from '@material-ui/icons/Message'
 import DnsIcon from '@material-ui/icons/Dns'
 import ExploreIcon from '@material-ui/icons/Explore'
 
+import './style.css'
+
 const MenuAside = props => (
-  <List component="nav">
+  <List component="nav" className='MenuAsideJarl'>
     <ListItem>
       <ListItemText primary="jarl-alejandro" />
     </ListItem>
@@ -24,13 +24,6 @@ const MenuAside = props => (
         <HomeIcon />
       </ListItemIcon>
       <ListItemText primary="Inicio" />
-    </ListItem>
-
-    <ListItem button>
-      <ListItemIcon>
-        <AccountCircleIcon />
-      </ListItemIcon>
-      <ListItemText primary="Perfil" />
     </ListItem>
 
     <ListItem button>

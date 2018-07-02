@@ -1,8 +1,7 @@
-import React, {
-  Component,
-  Fragment
-} from 'react'
-import MenuAside from './components/MenuAside'
+import React, { Component } from 'react'
+import MenuAside from './components/Menu'
+import Home from './components/Home'
+import Technology from './components/Technology'
 
 import './App.css'
 
@@ -12,7 +11,8 @@ class App extends Component {
       <section className='JarlApp'>
         <MenuAside />
         <main className='MainContainer'>
-          Main
+          <Home />
+          <Technology />
         </main>
       </section>
     )

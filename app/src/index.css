@@ -9,3 +9,8 @@ body {
   padding: 0;
   font-family: 'Roboto Slab', serif;
 }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
