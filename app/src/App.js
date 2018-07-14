@@ -9,9 +9,7 @@ class App extends Component {
   render() {
     return (
       <section className='JarlApp'>
-        <MenuAside />
         <main className='MainContainer'>
-          <Home />
           <Technology />
         </main>
       </section>

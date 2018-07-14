@@ -1,22 +1,21 @@
-import React from 'react'
-import { Typography }  from '@material-ui/core'
-
+import React, { Fragment } from 'react'
 import Item from './Item'
 import data from './data'
-
 import './style.css'
+import { Typography } from '@material-ui/core'
 
 const Technology = props => (
   <section className='TechnologyJarl' id='technology'>
-    <Typography
-      variant='title'
-      component='h2'
-      className='TechnologyJarl-title'
-    > Tecnologias
-    </Typography>
     <article className='TechnologyJarl-container'>
       { data.map((item, index) => (
-        <Item key={index} item={item} />
+        <Fragment key={index}>
+          <Typography variant='title'>{ item.title }</Typography>
+          <article className='TechnologyJarl-tech'>
+            { item.data.map((tech, index) => (
+              <Item item={tech} key={index} />
+            )) }
+          </article>
+        </Fragment>
       )) }
     </article>
   </section>
