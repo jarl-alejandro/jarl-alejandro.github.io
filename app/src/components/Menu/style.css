@@ -1,2 +1,12 @@
 .MenuAsideJarl {
+  display: flex;
+  position: fixed !important;
+  width: 100%;
+  z-index: 111;
+  background-color: whitesmoke;
+  transition: background-color .3s;
+}
+
+.sticky {
+  background-color: white;
 }

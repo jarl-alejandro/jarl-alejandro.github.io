@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Menu from './components/Menu'
 import Home from './components/Home'
 import Projects from './components/Projects'
@@ -9,14 +9,14 @@ import './App.css'
 class App extends Component {
   render() {
     return (
-      <section className='JarlApp'>
+      <Fragment>
         <Menu />
-        <main className='MainContainer'>
+        <main>
           <Home />
           <Projects />
           <Technology />
         </main>
-      </section>
+      </Fragment>
     )
   }
 }

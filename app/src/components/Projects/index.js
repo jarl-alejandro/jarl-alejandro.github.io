@@ -34,7 +34,7 @@ class Project extends Component {
 
   render () {
     return (
-      <section className='Project'>
+      <section className='Project' id='project'>
         <ModalProject
           isModal={this.state.isModal}
           data={this.state.data}

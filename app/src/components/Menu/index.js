@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import {
   List,
   ListItem,
@@ -13,41 +13,70 @@ import ExploreIcon from '@material-ui/icons/Explore'
 
 import './style.css'
 
-const MenuAside = props => (
-  <List component="nav" className='MenuAsideJarl'>
-    <ListItem>
-      <ListItemText primary="jarl-alejandro" />
-    </ListItem>
+class MenuAside extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      setState: false
+    }
 
-    <ListItem button component='a' href='#home'>
+    this.onScroll = this.onScroll.bind(this)
+  }
+
+  componentDidMount () {
+    window.addEventListener('scroll', this.onScroll, false)
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.onScroll, false)
+  }
+
+  onScroll () {
+    if (window.scrollY >= 60 && !this.state.sticky) {
+      this.setState({ sticky: true })
+    } else if (window.scrollY < 60 && this.state.sticky) {
+      this.setState({ sticky: false })
+    }
+  }
+
+  render () {
+    const sticky = this.state.sticky && 'sticky'
+    return (
+      <List component='nav' className={`MenuAsideJarl ${sticky}`}>
+      <ListItem>
+      <ListItemText primary='jarl-alejandro' />
+      </ListItem>
+
+      <ListItem button component='a' href='#home'>
       <ListItemIcon>
-        <HomeIcon />
+      <HomeIcon />
       </ListItemIcon>
-      <ListItemText primary="Inicio" />
-    </ListItem>
+      <ListItemText primary='Inicio' />
+      </ListItem>
 
-    <ListItem button component='a' href='#technology'>
+      <ListItem button component='a' href='#technology'>
       <ListItemIcon>
-        <DnsIcon />
+      <DnsIcon />
       </ListItemIcon>
-      <ListItemText primary="Tecnologias" />
-    </ListItem>
+      <ListItemText primary='Tecnologias' />
+      </ListItem>
 
-    <ListItem button component='a' href='#project'>
+      <ListItem button component='a' href='#project'>
       <ListItemIcon>
-        <ExploreIcon />
+      <ExploreIcon />
       </ListItemIcon>
-      <ListItemText primary="Proyectos" />
-    </ListItem>
+      <ListItemText primary='Proyectos' />
+      </ListItem>
 
-    <ListItem button component='a' href='#contact'>
+      <ListItem button component='a' href='#contact'>
       <ListItemIcon>
-        <MessageIcon />
+      <MessageIcon />
       </ListItemIcon>
-      <ListItemText primary="Contáctame" />
-    </ListItem>
-
-  </List>
-)
+      <ListItemText primary='Contáctame' />
+      </ListItem>
+      </List>
+    )
+  }
+}
 
 export default MenuAside
