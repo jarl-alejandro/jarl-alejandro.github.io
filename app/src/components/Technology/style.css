@@ -14,7 +14,7 @@ h2.TechnologyJarl-title {
 .TechnologyJarl-container {
   width: 90%;
   margin: 0 auto;
-
+  padding-top: 1rem;
 }
 .TechnologyJarl-tech {
   width: 90%;

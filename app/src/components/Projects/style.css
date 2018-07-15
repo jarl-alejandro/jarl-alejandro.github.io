@@ -1,0 +1,40 @@
+.Project {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.ProjectSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 15px;
+  padding-top: 1rem;
+}
+
+.ProjectCard-item {
+  height: 250px;
+  width: 100%;
+}
+
+.ModalProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalProject-card {
+  width: 50%;
+  height: 70%;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+              0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+              0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.ModalProject-slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
