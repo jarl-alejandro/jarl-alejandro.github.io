@@ -6,7 +6,7 @@
 
 .Header {
   position: fixed;
-  z-index: 11111;
+  z-index: 111;
   display: flex;
   align-content: center;
   align-items: center;

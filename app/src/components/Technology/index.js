@@ -7,7 +7,6 @@ import Base from '../Base'
 
 const style = {
   color: {
-    color: '#68f8fc'
   }
 }
 
@@ -15,9 +14,10 @@ const Technology = props => (
   <Base>
     <section className='TechnologyJarl'>
       <article className='TechnologyJarl-container'>
+        <h1 className='Project-title'>Tecnologias</h1>
         { data.map((item, index) => (
           <Fragment key={index}>
-            <Typography variant='title' style={style.color}>{ item.title }</Typography>
+            <p style={style.color}>{ item.title }</p>
             <article className='TechnologyJarl-tech'>
               { item.data.map((tech, index) => (
                 <Item item={tech} key={index} />

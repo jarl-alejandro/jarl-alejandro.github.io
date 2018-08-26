@@ -2,6 +2,14 @@
   width: 90%;
   margin: 0 auto;
   padding: 1rem 0;
+  padding-top: 80px;
+}
+
+.Project-title {
+  font-size: 2.25em;
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 .ProjectSection {

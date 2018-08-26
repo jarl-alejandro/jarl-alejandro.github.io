@@ -45,8 +45,8 @@ const styles = theme => ({
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center 40%',
+    height: '100%',
+    width: '100%'
   },
   imageBackdrop: {
     position: 'absolute',
@@ -81,9 +81,9 @@ const Item = ({ item, classes, openModal }) => (
     focusVisibleClassName={classes.focusVisible}
     onClick={e => openModal(item)}
   >
-    <span
+    <img
       className={classes.imageSrc}
-      style={{ backgroundImage: `url(${item.images[0]})` }}
+      src={`${item.images[0]}` }
     />
     <span className={classes.imageBackdrop} />
     <span className={classes.imageButton}>

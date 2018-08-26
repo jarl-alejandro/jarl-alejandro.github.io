@@ -23,10 +23,12 @@ class Project extends Component {
   }
 
   openModal (item) {
+    /*
     this.setState({
       isModal: true,
       data: item
     })
+    */
   }
 
   closeModal () {
@@ -42,7 +44,7 @@ class Project extends Component {
             data={this.state.data}
             closeModal={this.closeModal}
           />
-          <Typography variant='title'>Proyectos</Typography>
+          <h1 className='Project-title'>Proyectos</h1>
           <section className='ProjectSection'>
             { data.map(item => (
               <Item

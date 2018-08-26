@@ -1,9 +1,7 @@
 .TechnologyJarl {
   min-height: 100vh;
-  background-color: #F5F5F5;
   padding-bottom: 20px;
-  color: #68f8fc;
-  background-color: #343235;
+  padding-top: 80px;
 }
 
 h2.TechnologyJarl-title {
