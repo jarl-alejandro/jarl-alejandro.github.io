@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import logo from './logo.png'
-
 import './style.css'
 
 class MenuAside extends Component {
@@ -33,22 +33,22 @@ class MenuAside extends Component {
     const sticky = this.state.sticky && 'sticky'
     
     return (
-      <header className='Header'>
-        <img src={logo} className='Header-logo' />
+      <header className={`Header ${sticky}`}>
+        <img src={`${logo}`} className='Header-logo' />
 
         <nav className='Header-menu'>
           <ul className='Header-list'>
             <li className='Header-item'>
-              <a href="#inicio">Inicio</a>
+              <Link to='/'>Inicio</Link>
             </li>
             <li className='Header-item'>
-              <a href="#inicio">Proyectos</a>
+              <Link to='/proyectos'>Proyectos</Link>
             </li>
             <li className='Header-item'>
-              <a href="#inicio">Tecnologias</a>
+              <Link to='/tecnologias'>Tecnologias</Link>
             </li>
             <li className='Header-item'>
-              <a href="#inicio">Contáctame</a>
+              <Link to='/contacteme'>Contáctame</Link>
             </li>
           </ul>
         </nav>

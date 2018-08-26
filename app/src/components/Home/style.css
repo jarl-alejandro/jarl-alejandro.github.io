@@ -2,11 +2,37 @@
   height: 100vh;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
 
 .HomeJarl-title {
-  font-size: 15vh;
+  font-size: 3.5rem;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: normal;
+  line-height: 70px;
+  letter-spacing: 2px;
+}
+
+.HomeJarl-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  width: 100%;
+  list-style: none;
+}
+
+.HomeJarl-social--item a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 8px;
+}
+.HomeJarl-social--item a i {
+  font-size: 35px;
+  font-weight: bold;
 }

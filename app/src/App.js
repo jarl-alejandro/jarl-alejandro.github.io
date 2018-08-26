@@ -1,25 +1,8 @@
-import React, { Component, Fragment } from 'react'
-import Menu from './components/Menu'
-import Home from './components/Home'
-import Projects from './components/Projects'
-import Technology from './components/Technology'
+import React from 'react'
+import Router from './Router'
 
-import './App.css'
+const App = () => (
+  <Router />
+)
 
-class App extends Component {
-
-  render() {
-    return (
-      <Fragment>
-        <Menu />
-        <main>
-          <Home />
-          <Projects />
-          <Technology />
-        </main>
-      </Fragment>
-    )
-  }
-}
-
-export default App;
+export default App

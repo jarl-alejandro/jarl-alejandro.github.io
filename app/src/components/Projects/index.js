@@ -3,6 +3,7 @@ import { Typography } from '@material-ui/core'
 
 import Item from './Item'
 import ModalProject from './ModalProject'
+import Base from '../Base'
 
 import data from './data'
 import './style.css'
@@ -34,23 +35,25 @@ class Project extends Component {
 
   render () {
     return (
-      <section className='Project' id='project'>
-        <ModalProject
-          isModal={this.state.isModal}
-          data={this.state.data}
-          closeModal={this.closeModal}
-        />
-        <Typography variant='title'>Proyectos</Typography>
-        <section className='ProjectSection'>
-          { data.map(item => (
-            <Item
-              openModal={this.openModal}
-              item={item}
-              key={item.id}
-            />
-          ))}
+      <Base>
+        <section className='Project'>
+          <ModalProject
+            isModal={this.state.isModal}
+            data={this.state.data}
+            closeModal={this.closeModal}
+          />
+          <Typography variant='title'>Proyectos</Typography>
+          <section className='ProjectSection'>
+            { data.map(item => (
+              <Item
+                openModal={this.openModal}
+                item={item}
+                key={item.id}
+              />
+            ))}
+          </section>
         </section>
-      </section>
+      </Base>
     )
   }
 }
