@@ -7,6 +7,7 @@ import Technology from './components/Technology'
 import './App.css'
 
 class App extends Component {
+
   render() {
     return (
       <Fragment>

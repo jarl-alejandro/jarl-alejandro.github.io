@@ -1,19 +1,12 @@
 .HomeJarl {
   height: 100vh;
-  background-color: whitesmoke;
-  color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .HomeJarl-title {
-  width: 100%;
-  padding-top: 75px;
-  margin-bottom: 75px;
-  text-align: center;
-  font-size: 60px;
-}
-
-.HomeJarl-text {
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
+  font-size: 15vh;
 }
