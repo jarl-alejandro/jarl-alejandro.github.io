@@ -34,7 +34,7 @@ class MenuAside extends Component {
     
     return (
       <header className={`Header ${sticky}`}>
-        <img src={`${logo}`} className='Header-logo' />
+        <img src={`${logo}`} className='Header-logo' alt='Alejandro Rivas' />
 
         <nav className='Header-menu'>
           <ul className='Header-list'>

@@ -84,6 +84,7 @@ const Item = ({ item, classes, openModal }) => (
     <img
       className={classes.imageSrc}
       src={`${item.images[0]}` }
+      alt={item.title}
     />
     <span className={classes.imageBackdrop} />
     <span className={classes.imageButton}>

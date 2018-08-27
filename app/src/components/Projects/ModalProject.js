@@ -15,7 +15,7 @@ const ModalProject = props => (
       <Typography variant='subheading'>{ props.data.descripcion }</Typography>
       <article className='ModalProject-slider'>
         { props.data.images.map((item, index) => (
-          <img src={item} key={index} />
+          <img src={item} key={index} alt={item.title} />
         )) }
       </article>
     </section>

@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import Item from './Item'
 import data from './data'
 import './style.css'
-import { Typography } from '@material-ui/core'
 import Base from '../Base'
 
 const style = {
