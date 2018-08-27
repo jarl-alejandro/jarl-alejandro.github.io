@@ -48,7 +48,7 @@ class MenuAside extends Component {
               <Link to='/tecnologias'>Tecnologias</Link>
             </li>
             <li className='Header-item'>
-              <Link to='/contacteme'>Contáctame</Link>
+              <Link to='/servicios'>Servicios</Link>
             </li>
           </ul>
         </nav>

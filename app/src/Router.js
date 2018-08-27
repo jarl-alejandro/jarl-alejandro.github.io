@@ -8,7 +8,7 @@ import {
 import Home from './components/Home'
 import Technology from './components/Technology'
 import Projects from './components/Projects'
-import Contact from './components/Contact'
+import Service from './components/Service'
 
 export default () =>  (
   <Router>
@@ -16,7 +16,7 @@ export default () =>  (
       <Route path='/' exact component={Home} />
       <Route path='/proyectos' exact component={Projects} />
       <Route path='/tecnologias' exact component={Technology} />
-      <Route path='/contacteme' exact component={Contact} />
+      <Route path='/servicios' exact component={Service} />
     </Switch>
   </Router>
 )

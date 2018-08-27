@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Typography } from '@material-ui/core'
 
 import Item from './Item'
 import ModalProject from './ModalProject'

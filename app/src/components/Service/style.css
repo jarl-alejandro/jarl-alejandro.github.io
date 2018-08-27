@@ -1,0 +1,37 @@
+.Service {
+  padding-top: 80px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.Service-title {
+  font-size: 2.25em;
+  font-weight: lighter;
+  letter-spacing: -0.028em;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.Service-text {
+  font-size: 1.50em;
+  line-height: 47px;
+}
+.Service-email {
+  text-decoration: underline;
+  color: #067df7;
+  font-size: 1.50em;
+}
+
+.Service-list {
+  margin-left: -2rem;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  padding-left: 2rem;
+  list-style-type: square;
+  font-size: 1.50em;
+  font-weight: normal;
+}
+
+.Service-item {
+  line-height: 1.5;
+}
