@@ -16,7 +16,11 @@ export default [
       },
       {
         name: 'React & React native',
-        image: require('./logos/react-logo.png')
+        image: require('./logos/react-logo.png'),
+        style: {
+          width: '130px',
+          height: '72px'
+        }
       },
       {
         name: 'Sass',
@@ -37,15 +41,27 @@ export default [
     data: [
       {
         name: 'Node',
-        image: require('./logos/node-logo.png')
+        image: require('./logos/node-logo.png'),
+        style: {
+          width: '130px',
+          height: '72px'
+        }
       },
       {
         name: 'Django',
-        image: require('./logos/django-logo.png')
+        image: require('./logos/django-logo.png'),
+        style: {
+          width: '138px',
+          height: '72px'
+        }
       },
       {
         name: 'Graphql',
-        image: require('./logos/graphql-card.png')
+        image: require('./logos/graphql-card.png'),
+        style: {
+          width: '170px',
+          height: '80px'
+        }
       },
     ]
   },

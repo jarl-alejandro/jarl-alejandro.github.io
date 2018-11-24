@@ -2,13 +2,18 @@
   overflow: auto;
 }
 
-.bold {
-  font-weight: bold;
+.Portfolio {
+  background-color: #101010;
+  width: 100%;
+  min-height: 100vh;
 }
-.italic {
-  font-style: italic;
-}
-.border-title {
-  border-top: 1px solid;
-  width: 5%;
+
+.PortfolioContent {
+  background: white;
+  width: 98%;
+  margin-left: 2%;
+  min-height: 98vh;
+
+  position: relative;
+  top: 4rem;
 }

@@ -1,38 +1,51 @@
-.HomeJarl {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+.Home {
+	height: 63vh;
+	background-color: #101010;
+	color: white;
+	padding-top: 56px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	position: relative;
 }
 
-.HomeJarl-title {
-  font-size: 3.5rem;
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  font-weight: 200;
-  line-height: 70px;
-  letter-spacing: 2px;
+.Home-slogan {
+	font-size: 40px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.HomeJarl-social {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  width: 100%;
-  list-style: none;
+.Home-box {
+	width: 60%;
 }
 
-.HomeJarl-social--item a {
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-  letter-spacing: 8px;
+.Home-present {
+	font-size: 40px;
+	width: 100%;
+	text-align: center;
 }
-.HomeJarl-social--item a i {
-  font-size: 35px;
-  font-weight: bold;
+
+.Home-info {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 1.5;
+}
+
+.Home-info-box {
+	position: absolute;
+	z-index: 1;
+  bottom: -10rem;
+	width: 65%;
+  height: 17rem;
+	margin: 0 auto;
+	display: flex;
+	clip-path: polygon(50% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+  padding: 10px 42px;
+	border-radius: 18px;
+	background-color: #0f0f0f;
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import logo from './logo.png'
 import './style.css'
 
@@ -34,24 +33,30 @@ class MenuAside extends Component {
     
     return (
       <header className={`Header ${sticky}`}>
-        <img src={`${logo}`} className='Header-logo' alt='Alejandro Rivas' />
+        <div className="Header-content">
+          <div className="Header-flex">
+            <img src={`${logo}`} className='Header-logo' alt='Alejandro Rivas' />
+            <h1 className="Header-title">Alejandro Rivas</h1>
+          </div>
 
-        <nav className='Header-menu'>
-          <ul className='Header-list'>
-            <li className='Header-item'>
-              <Link to='/'>Inicio</Link>
-            </li>
-            <li className='Header-item'>
-              <Link to='/proyectos'>Proyectos</Link>
-            </li>
-            <li className='Header-item'>
-              <Link to='/tecnologias'>Tecnologias</Link>
-            </li>
-            <li className='Header-item'>
-              <Link to='/servicios'>Servicios</Link>
-            </li>
-          </ul>
-        </nav>
+          <nav className='Header-menu'>
+            <ul className='Header-list'>
+              <li className='Header-item'>
+                <a href='#alejandro'>Alejandro</a>
+              </li>
+              <li className='Header-item'>
+                <a href='#servicios'>Servicios</a>
+              </li>
+              <li className='Header-item'>
+                <a href='#experiencia'>Experiencia</a>
+              </li>
+              <li className='Header-item'>
+                <a href='#tecnologias'>Tecnologias</a>
+              </li>
+             
+            </ul>
+          </nav>
+        </div>
 
       </header>
     )

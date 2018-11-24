@@ -1,6 +1,6 @@
 .Service {
   padding-top: 80px;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -10,11 +10,12 @@
   letter-spacing: -0.028em;
   margin-top: 20px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .Service-text {
   font-size: 1.50em;
-  line-height: 47px;
+  line-height: 1.5;
 }
 .Service-email {
   text-decoration: underline;
@@ -26,6 +27,7 @@
   margin-left: -2rem;
   margin-top: 17px;
   margin-bottom: 17px;
+  margin-left: 50px;
   padding-left: 2rem;
   list-style-type: square;
   font-size: 1.50em;
