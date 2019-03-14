@@ -1,0 +1,42 @@
+@import "../../config.scss";
+
+.Header {
+  width: 100%;
+}
+
+.Header-logo {
+  width: 85px;
+  height: 45px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1.2rem;
+}
+
+.Header-nav {
+  margin-top: 3.5rem;
+}
+
+.Header-menu {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.Header-menu-item {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  padding-left: 2rem;
+  border-radius: 0 25px 25px 0;
+
+  transition: all ease .3s;
+
+  &:hover {
+    background-color: #fffbe6;
+  }
+
+  &.active {
+    background-color: #fffbe6;
+  }
+}

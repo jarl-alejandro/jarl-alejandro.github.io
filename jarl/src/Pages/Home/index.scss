@@ -1,0 +1,65 @@
+@import "../../config.scss";
+
+.Home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fffbe6;
+}
+
+.Home-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.Home-tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 17px;
+
+  span {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    transition: all ease .3s;
+    border-radius: 3px;
+  }
+
+  span:hover {
+    background: $black;
+    color: #fffbe6;
+    cursor: pointer;
+  }
+}
+
+.Home-social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  a {
+    margin-left: 25px;
+  }
+}
+
+
+.Home-description {
+  width: 50%;
+  margin: 2.5rem auto;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+}
