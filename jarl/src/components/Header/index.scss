@@ -2,41 +2,52 @@
 
 .Header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
 }
 
 .Header-logo {
-  width: 85px;
-  height: 45px;
+  width: 55px;
+  height: 40px;
   display: flex;
-  margin: 0 auto;
-  margin-top: 1.2rem;
+  margin-top: 5px;
 }
 
 .Header-nav {
-  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .Header-menu {
   list-style-type: none;
   padding-left: 0;
+  display: flex;
+  margin-right: 15px;
 }
 
 .Header-menu-item {
-  height: 35px;
+  margin-left: 15px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   align-content: center;
+  border-radius: 3px;
   cursor: pointer;
-  padding-left: 2rem;
-  border-radius: 0 25px 25px 0;
 
   transition: all ease .3s;
 
   &:hover {
-    background-color: #fffbe6;
+    background: $black;
+    color: #fffbe6;
   }
 
   &.active {
-    background-color: #fffbe6;
+    background: $black;
+    color: #fffbe6;
   }
 }

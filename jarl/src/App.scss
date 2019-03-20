@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 16;
+  font-size: 16px;
   color: $black;
 }
 
@@ -10,9 +10,4 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.Main {
-  display: grid;
-  grid-template-columns: 15% 85%;
 }
