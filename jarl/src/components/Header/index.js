@@ -14,7 +14,8 @@ class Header extends PureComponent {
             <li className="Header-menu-item active">Alejandro Rivas</li>
             <li className="Header-menu-item">Servicios</li>
             <li className="Header-menu-item">Experiencia</li>
-            <li className="Header-menu-item">Conacto</li>
+            <li className="Header-menu-item">Tecnologías</li>
+            <li className="Header-menu-item">Contacto</li>
           </ul>
         </nav>
       </header>

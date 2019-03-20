@@ -1,0 +1,80 @@
+@import "../../config.scss";
+
+.Experiences {
+  min-height: 100vh;
+  background-color: $black;
+
+  &-title {
+    color: $primary;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.Project {
+  background: $primary;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 10px;
+
+  &-title {
+    margin-bottom: .1875566421em;
+    font-size: 3rem;
+    line-height: 1.1253398526;
+    color: $black;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 10rem;
+      height: 4px;
+      background-color: #235aa6;
+      margin: 26px 0;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+
+  &-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.ProjectSlider {
+
+  &-images-img {
+    max-width: 100%;
+    max-height: 100%;
+
+    height: 35rem;
+    min-height: 40rem;
+  }
+
+  &-arrows {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4rem;
+    
+    a {
+      color: $black;
+      &:last-child {
+        margin-top: 20px;
+      }
+    }
+
+    i {
+      font-size: 80px;
+    }
+  }
+}

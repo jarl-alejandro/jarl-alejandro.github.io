@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Home from './Pages/Home'
+import Experiences from './Pages/Experiences'
 
 import Header from './components/Header'
 
@@ -12,6 +13,7 @@ class App extends Component {
       <main className="Main">
         <Header />
         <Home />
+        <Experiences />
       </main>
     )
   }
