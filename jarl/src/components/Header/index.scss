@@ -8,8 +8,7 @@
   display: flex;
   justify-content: space-between;
   height: 44px;
-  background-color: #fffbe6;
-
+  background-color: $primary;
 }
 
 .Header-logo {
@@ -38,18 +37,33 @@
   display: flex;
   align-items: center;
   align-content: center;
-  border-radius: 3px;
   cursor: pointer;
 
   transition: all ease .3s;
+  position: relative;
+
+  &::after {
+    content: "";
+    transition: all ease .3s;
+    background: $accent;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
 
   &:hover {
-    background: $black;
-    color: #fffbe6;
+    &::after {
+      width: 50%;
+    }
   }
 
   &.active {
-    background: $black;
-    color: #fffbe6;
+    &::after {
+      width: 50%;
+    }
   }
+
 }
