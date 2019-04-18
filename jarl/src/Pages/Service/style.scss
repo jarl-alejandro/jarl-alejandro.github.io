@@ -6,7 +6,6 @@
   position: relative;
 
   &::before {
-    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -14,5 +13,10 @@
     height: 60vh;
     display: block;
     background-color: $primary;
+  }
+
+  svg {
+    background: $primary;
+    path { fill: $primary-ligth; }
   }
 }
