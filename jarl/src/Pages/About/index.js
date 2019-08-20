@@ -1,6 +1,6 @@
 import React from 'react'
 
-function About (props) {
+function About () {
   return (
     <section className="Section">
       <article className="Section-box">
@@ -20,7 +20,11 @@ function About (props) {
       </article>
 
       <article className="Secction-box">
-        FOTO
+        <img
+          className="Section-logo"
+          src="https://instagram.fgye12-1.fna.fbcdn.net/vp/c0eac531b653ec54505eca10ce8eb962/5DDF9DE5/t51.2885-15/e35/60203388_140627553682544_1125612956276383839_n.jpg?_nc_ht=instagram.fgye12-1.fna.fbcdn.net"
+          alt="Alejandro Rivas"
+        />
       </article>
     </section>
   )
