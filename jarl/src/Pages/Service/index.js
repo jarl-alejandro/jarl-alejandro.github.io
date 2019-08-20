@@ -1,18 +1,61 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 
-import './style.scss'
+function Service (props) {
+  return (
+    <section className="Section">
+      <article className="Section-box">
+        <h2 className="Section-title">
+          <span>S</span>
+          <span>ervicios</span>
+        </h2>
 
-class Service extends PureComponent {
+        <article>
+          <div className="Section-description">
+            We work on project with multiple aspect
+            check out out my service
+          </div>
 
-  render () {
-    return (
-      <section className="Service">
-        <svg version="1.1" className="uncode-row-divider uncode-row-divider-swoosh-opacity" x="0px" y="0px" width="100%" height="70%" viewBox="0 0 240 24" enableBackground="new 0 0 240 24" preserveAspectRatio="none">
-          <path d="M240,24V3.72c-51.797,0-69.883,11.64-94.707,14.021c-24.691,2.359-43.872-3.25-63.765-3.17 c-19.17,0.109-31.196,3.6-51.309,6.529C15.552,23.209,4.321,22.47,0,22.029V24H240z"></path>
-        </svg>
-      </section>
-    )
-  }
+          <div className="Section-toAction">Contact me</div>
+        </article>
+      </article>
+
+      <article className="Secction-box">
+        <article className="Service-card">
+          <div className="Card-icon">Icon</div>
+          <div className="Card-box">
+            <p className="Card-title">WEB DESING</p>
+            <p className="Card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Veritatis quibusdam, facere doloremque eius consequuntur voluptates sunt 
+              dolorum aspernatur delectus 
+            </p>
+          </div>
+        </article>
+        <article className="Service-card">
+          <div className="Card-icon">Icon</div>
+          <div className="Card-box">
+            <p className="Card-title">WEB DESING</p>
+            <p className="Card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Veritatis quibusdam, facere doloremque eius consequuntur voluptates sunt 
+              dolorum aspernatur delectus 
+            </p>
+          </div>
+        </article>
+        <article className="Service-card">
+          <div className="Card-icon">Icon</div>
+          <div className="Card-box">
+            <p className="Card-title">WEB DESING</p>
+            <p className="Card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Veritatis quibusdam, facere doloremque eius consequuntur voluptates sunt 
+              dolorum aspernatur delectus 
+            </p>
+          </div>
+        </article>
+      </article>
+    </section>
+  )
 }
 
 export default Service

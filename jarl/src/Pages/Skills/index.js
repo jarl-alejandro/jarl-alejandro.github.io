@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Contact (props) {
+function Skills (props) {
   return (
     <section></section>
   )
 }
 
-export default Contact
+export default Skills
