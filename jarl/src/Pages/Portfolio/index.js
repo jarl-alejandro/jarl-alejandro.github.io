@@ -1,37 +1,38 @@
 import React from 'react'
 
-function Portfolio (props) {
-  return (
-    <section className="Section">
-      <article className="Section-box">
-        <h2 className="Section-title">
-          <span>P</span>
-          <span>ortafolio</span>
-        </h2>
-      </article>
+import './style.scss'
 
-      <article className="Secction-box">
-        <article className="ProjectItem">
-          <img src="https://instagram.fgye12-1.fna.fbcdn.net/vp/f937905d7eed61b717fa3719b9749400/5DDFCC56/t51.2885-15/e35/60399343_618468795338154_1886673092910712154_n.jpg?_nc_ht=instagram.fgye12-1.fna.fbcdn.net" alt="foto" className="ProjectItem-logo" />
-          <div className="ProjectItem-title">Agicla</div>
-        </article>
-        <article className="ProjectItem">
-          <img src="https://instagram.fgye12-1.fna.fbcdn.net/vp/f937905d7eed61b717fa3719b9749400/5DDFCC56/t51.2885-15/e35/60399343_618468795338154_1886673092910712154_n.jpg?_nc_ht=instagram.fgye12-1.fna.fbcdn.net" alt="foto" className="ProjectItem-logo" />
-          <div className="ProjectItem-title">Agicla</div>
-        </article>
-        <article className="ProjectItem">
-          <img src="https://instagram.fgye12-1.fna.fbcdn.net/vp/f937905d7eed61b717fa3719b9749400/5DDFCC56/t51.2885-15/e35/60399343_618468795338154_1886673092910712154_n.jpg?_nc_ht=instagram.fgye12-1.fna.fbcdn.net" alt="foto" className="ProjectItem-logo" />
-          <div className="ProjectItem-title">Agicla</div>
-        </article>
-        <article className="ProjectItem">
-          <img src="https://instagram.fgye12-1.fna.fbcdn.net/vp/f937905d7eed61b717fa3719b9749400/5DDFCC56/t51.2885-15/e35/60399343_618468795338154_1886673092910712154_n.jpg?_nc_ht=instagram.fgye12-1.fna.fbcdn.net" alt="foto" className="ProjectItem-logo" />
-          <div className="ProjectItem-title">Agicla</div>
-        </article>
-        <article className="ProjectItem">
-          <img src="https://instagram.fgye12-1.fna.fbcdn.net/vp/f937905d7eed61b717fa3719b9749400/5DDFCC56/t51.2885-15/e35/60399343_618468795338154_1886673092910712154_n.jpg?_nc_ht=instagram.fgye12-1.fna.fbcdn.net" alt="foto" className="ProjectItem-logo" />
-          <div className="ProjectItem-title">Agicla</div>
-        </article>
-      </article>
+function Portfolio () {
+  return (
+    <section className="Section" style={{ display: 'block', paddingTop: '2rem' }}>
+      <h2 className="Section-title PortfolioGrid-title">
+        <span>P</span>
+        <span>ortafolio</span>
+      </h2>
+
+      <section className="PortfolioGrid">
+        { new Array(5).fill(5).map((item, index) => (
+          <article className="ProjectItem" key={index}>
+            <div className="ProjectItem-boxContent">
+              <h2 className="ProjectItem-title">Agicla</h2>
+             <div className="ProjectItem-content">
+                La nueva plataforma de la productividad
+                Agicla (Beta) es una sola aplicación para gestionar
+                efectivamente tus:
+             </div>
+            </div>
+
+            <div className="ProjectItem-boxLogo">
+              <img
+                alt="foto"
+                className="ProjectItem-logo"
+                src="https://instagram.fgye12-1.fna.fbcdn.net/vp/42a0df4994cdc88455db8c44384f39d6/5E1022DD/t51.2885-15/e35/60619198_2283353238650019_9110278551377145951_n.jpg?_nc_ht=instagram.fgye12-1.fna.fbcdn.net"
+              />
+            </div>
+          </article>
+        )) }
+        
+      </section>
     </section>
   )
 }

@@ -1,0 +1,53 @@
+
+.ProjectItem {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 50px;
+  min-height: 60vh;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(84, 84, 84, 0.41);
+
+  &-boxContent {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  &-title {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+    color: #313131;
+  }
+
+  &-content {
+    line-height: 1.5;
+  }
+
+  &-boxLogo {
+    position: relative;
+  }
+
+  &-logo {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    box-shadow: 0 0 5px rgba(84, 84, 84, 0.41);
+  }
+
+  &:nth-child(even) {
+    .ProjectItem-boxContent {
+      order: 1;
+    }
+
+    .ProjectItem-logo {
+      left: -3rem;
+    }
+  }
+
+}
